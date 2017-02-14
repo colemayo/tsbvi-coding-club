@@ -1,0 +1,11 @@
+output "start of comments.quorum"
+// two forward slashes comment out everything after them on the line
+output "this does output" // output "this does not output"
+//output "none of this line outputs"
+// you can use a block comment if you need to comment out multiple lines 
+// without using the double slashes.
+/* everything between the forward slash star and the next star forward slash
+is commented out 
+output "this does not output because we haven't reached the slash star" */
+output "We just reached the star slash so now this outputs"
+output "end of comments.quorum"

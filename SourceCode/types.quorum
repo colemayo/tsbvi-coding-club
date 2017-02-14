@@ -1,0 +1,48 @@
+// types.quorum
+output "types.quorum"
+/* starting block comment
+integer is a number, either positive, negative, or zero, that does not a 
+a decimal point. You can create an integer in Quorum like this... 
+ending block comment */
+integer myInt = 10
+output myInt // 10
+// if you've already created a variable, you can change its value like this
+myInt = 1000
+output myInt // 1000
+
+// number is similar to an integer, except that it allows decimal points 
+number myNum = 10.44
+output myNum // 10.44
+myNum = 10 
+output myNum // 10.0
+
+/* starting block comment
+ boolean can only have two possible values, true and false. You can set 
+booleans by stating it's value explicitly or by having it evaluate an
+expression, which we will talk about later.
+ending block comment */
+boolean myBoolean = true
+output myBoolean // true
+myBoolean = false 
+output myBoolean // false
+
+// text variables store strings of characters and are enclosed in quotes
+text myText = "Hello, World!"
+output myText
+text name = "Cole Mayo"
+output name
+
+/* starting block comment
+We used "myType" names for our variables, but you should try to give your 
+variables descriptive names. The only rules for variables names are that they
+can't start with a number, an underscore, and cna't contain some special 
+characters like &%^$*#(){}|
+ending block comment */
+text aCamelCasedName = "nothing bad about this"
+text underscores_are_good = "this is fine, too."
+text iron_man_3 = "a number at the end is also fine"
+output aCamelCasedName
+output underscores_are_good
+output iron_man_3
+
+output "types.quorum done."

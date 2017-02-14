@@ -1,0 +1,81 @@
+// operators.quorum
+output "operators.quorum"
+// plus
+integer a = 5 + 5
+number b = 2.2 + 2.2
+text c = "fire" + "fox"
+// text variables can also be combined with other variables using plus.
+// this is called concatenation
+output "my favorite number is " + a
+output " 5 + 5 = " + a
+output "2.2 + 2.2 = " + b
+output c
+// you can't add booleans
+
+// minus
+integer integer_one = 2017 - 2016
+number decimal_one = 10.2 - 9.2
+// you can't subtract text or booleans
+output "2017 - 2016 = " + integer_one
+output "10.2 - 9.2 = " + decimal_one
+
+// times
+integer five_squared = 5 * 5
+number fraction = 0.5 * 0.5
+output "5 * 5 = " + five_squared
+output "0.5 * 0.5 = " + fraction
+// you can't times text or booleans
+
+// divide
+integer age = 110 / 5
+number grade = 88 / 100
+output "age: " + age
+output "grade: " + grade
+// you can't divide text or booleans
+
+// modulus: returns the remainder in an integer division
+integer remainder = 7 mod 2 
+output "7 mod 2: " + remainder
+
+// less than: tests to see if the number to the left of the symbol is smaller
+// than the number on the right.
+boolean true_expression = 5 < 6
+boolean false_expression = 4 < 2
+output "5 < 6: " + true_expression
+output "4 < 2: " + false_expression
+
+// greater than: tests to see if the number to the left of the symbol is greater
+// than the number on the right
+true_expression = 10 > 5
+false_expression = 5 > 5
+output "10 > 5: " + true_expression
+output "5 > 5: " + false_expression
+
+//less than or equal to: just like less than but includes when the numbers are equal
+true_expression = 10 <= 10
+false_expresssion = 11 <= 10
+output "10 <= 10: " + true_expression
+output "9 <= 10: " + false_expression
+
+// greater than or equal to: just like greater than but includes equal numbers
+true_expression = 10 >= 10
+false_expression = 9 >= 10
+output "10 >= 10: " + true_expression
+output "9 >= 10: " + false_expression
+
+// equals: test whether two variables are equal
+output 10 = 10 // true
+output 10 = 0 // false
+output 10.4 = 10.4 // true
+output "this text" = "this text" // true
+output "this text" = "that text" // false
+
+// not equals
+output 10 not= 10 // false
+output 10 not= 0 // true
+output 10.4 not= 10.4 // false
+output "this text" not= "this text" // false
+output "this text" not= "that text" // true
+
+
+output "operators.quorum done."
