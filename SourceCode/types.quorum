@@ -1,6 +1,19 @@
 // types.quorum
 output "types.quorum"
 /* starting block comment
+We used "myType" names for our variables (myInt, myTest, myBool, myNumb), 
+but you should try to give your variables descriptive names. The only rules 
+for variables names are that they can't start with a number, an underscore,
+and cna't contain some special characters like &%^$*#(){}| 
+ending block comment */
+text aCamelCasedName = "nothing bad about this"
+text underscores_are_good = "this is fine, too."
+text iron_man_3 = "a number at the end is also fine"
+output aCamelCasedName
+output underscores_are_good
+output iron_man_3
+
+/* starting block comment
 integer is a number, either positive, negative, or zero, that does not a 
 a decimal point. You can create an integer in Quorum like this... 
 ending block comment */
@@ -31,18 +44,5 @@ text myText = "Hello, World!"
 output myText
 text name = "Cole Mayo"
 output name
-
-/* starting block comment
-We used "myType" names for our variables, but you should try to give your 
-variables descriptive names. The only rules for variables names are that they
-can't start with a number, an underscore, and cna't contain some special 
-characters like &%^$*#(){}|
-ending block comment */
-text aCamelCasedName = "nothing bad about this"
-text underscores_are_good = "this is fine, too."
-text iron_man_3 = "a number at the end is also fine"
-output aCamelCasedName
-output underscores_are_good
-output iron_man_3
 
 output "types.quorum done."

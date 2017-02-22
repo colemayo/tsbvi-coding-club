@@ -1,0 +1,29 @@
+// casting.quorum
+output "start of casting.quorum"
+/*
+Casting is when you convert one type of variable into another. This means if we 
+have a text variable that "looks" like a number or integer, we can cast it 
+to a variable of type number or integer. Casting numbers or intgers to text 
+happens implicitly whenever you do concatenation.
+
+The "action" used to perform casting is called... cast.
+Actions are a special pieces of code that have unique names, take zero or 
+more variables, and sometimes return a variable to you. Casting looks like this
+cast(<desired type>, <variable to cast>)
+*/
+// casting text
+integer counting_up = cast(integer, "1234567")
+output counting_up
+
+// casting a text variable to a number
+text some_text = "4.2"
+number some_value = cast(number, some_text)
+output some_value
+
+// casting a text variable to an integer
+text more_text = "2017"
+integer year = cast(integer, more_text)
+integer next_year = year + 1
+output next_year
+
+output "end of casting.quorum"

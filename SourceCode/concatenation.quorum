@@ -1,0 +1,36 @@
+// concatenation.quorum
+output "start of concatenation.quorum"
+/*
+Concatenation is is to connect two pieces of data. In the world of programming 
+it almost always refers to combining text and integers/numbers
+You can concatenate numbers and integers to text variables by using the plus
+operator
+*/
+
+// the next three examples all have the exact same output
+// concatenating integer variable to text variable
+text date = "the year is "
+integer year = 2017
+text date_and_year = date + year
+// note: variables date and year are unaffected by the creating of date_and_year
+output date_and_year
+
+// concatenating integer to a text variable (no integer variable neccessary
+date = "the year is "
+output date + 2017 
+
+// concatenating text and integer (no text or integer variables)
+output "the year is " + 2017
+
+// you can also sandwhich multiple concatenations together
+output "the year is " + 2017 + " and next year is " + 2018
+
+// what do you think the output of the following is?
+output "next year is " + 2017 + 1
+// the order of the variables is important!
+
+//concatenation also works with number variables
+number months_past = 2.0/12.0
+output "we are " + months_past + " through the year"
+
+output "concatenation.quorum done."

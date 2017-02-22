@@ -1,0 +1,14 @@
+// input.quorum
+output "starting input.quorum"
+/*
+Taking in input is awesome because it allows us to make more interesting 
+programs. In this case, input means having the program ask the user a question 
+which the user can then answer by typing in the output window. The program can 
+then store this answer and do fun things with it. To get input, you use an 
+action called... input()
+The question you want to ask is text that is given as an argument.
+*/
+
+text response = input("make the computer say whatever you want!")
+// now go to the output window and type your response and hit enter
+say response
