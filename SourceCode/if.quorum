@@ -1,0 +1,45 @@
+// if.quorum 
+output "starting if.quorum"
+/*
+When programming a computer, we often want a machine to make decisions 
+automatically. For example, we might want the computer to add some numbers, then
+determine if the sum is greater than 10. Or, we might want a program to search 
+the internet and determine if a picture is a cat, or any nuber of reasons. 
+If constructs are fundamental for programs to make decisions.
+The form of an if statment is...
+if <some condition>
+    <code block that continues until you see end on its own line>
+end
+*/
+// test if an integer is greater than 10
+integer a = 11
+if a > 10
+    output a + " is greater than 10"
+end
+/*
+Lets say we wanted to check multiple conditions at once and do something if 
+a is greater than 10 and something else if it's lower than 10. We can use 
+the elseif construct which runs only if a previous if condition was false.
+*/
+a = 9 // a was defined earlier
+if a > 10
+    output a + " is greater than 10"
+elseif a < 10 
+    output a + " is less than 10"
+end
+/* 
+Finally, we amy want another piece of code to run if none of the condtions that 
+we check in the if and elseif statements were true. This is called the else 
+condition. The else condtion has to be the last condtion in the sequence of 
+if and elseif statements. 
+*/
+a = 10 // a was defined earlier
+if a > 10
+    output a + " is greater than 10"
+elseif a < 10 
+    output a + " is less than 10"
+else
+    output a + " is equal to 10"
+end
+
+output "end of if.quorum"

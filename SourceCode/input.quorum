@@ -9,6 +9,6 @@ action called... input()
 The question you want to ask is text that is given as an argument.
 */
 
-text response = input("make the computer say whatever you want!")
+text response = input("make the ccomputer say whatever you want!")
 // now go to the output window and type your response and hit enter
 say response
