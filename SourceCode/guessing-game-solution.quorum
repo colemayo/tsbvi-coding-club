@@ -1,0 +1,23 @@
+output "guessing-game-solution.quorum"
+
+// the number the player is trying to guess
+integer correct_integer = 766
+
+// a boolean "flag" that we will set to true once the correct_integer has been guessed
+boolean player_has_not_won = true
+
+// our game loop
+repeat while player_has_not_won 
+    // use input() to get the text form of the guess    
+    text t_guess = input("Guess what number I'm thinking of!")
+    // cast the guess to an integer
+    integer i_guess = cast(integer, t_guess)
+    if i_guess > correct_integer
+        output "To high!"
+    elseif i_guess < correct_integer
+        output "To low!"
+    else
+        output "Wow, you won!"
+        play_has_not_won = true    
+    end
+end

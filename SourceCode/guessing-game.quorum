@@ -1,0 +1,12 @@
+// guessing-game.quorum
+output "starting guessing-game.quorum"
+/* Here we are going to make a guessing game! The game works like this...
+You will tell the game what the correct integer is.
+The game will then keep repeating while the player has not guessed the correct 
+number. Each repeat/loop, we will ask the player to make a guess using input().
+You will have to cast the result of the input to an integer to compare it to 
+the correct number.
+If their guess is to high, we will output to the console "To high!"
+If their guess is to low, we will output to the console "To low!"  
+If you are confused with any of these concepts, review the files 
+input.quorum, if.quorum, repeat.quorum, and casting.quorum respectively. */
