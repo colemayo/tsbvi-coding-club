@@ -18,6 +18,6 @@ repeat while player_has_not_won
         output "To low!"
     else
         output "Wow, you won!"
-        play_has_not_won = true    
+        play_has_not_won = false    
     end
 end
