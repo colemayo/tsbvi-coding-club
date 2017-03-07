@@ -1,0 +1,6 @@
+/*
+Create a Main action. 
+From that Main action, call a action called is_even that takes in one integer 
+variable and returns a boolean that is true if the number passed in is even 
+and false otherwise.
+*/
