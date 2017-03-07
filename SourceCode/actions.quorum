@@ -51,3 +51,5 @@ end
 action complex_math(integer a) returns integer
     return ((a / 2) * 5) mod 3
 end
+
+// Now that you're an actions pro, try the even or odd exercise
