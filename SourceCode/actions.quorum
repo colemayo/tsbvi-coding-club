@@ -1,4 +1,53 @@
 // actions.quorum
-output "starting actions.quorum"
+/*
+Actions are groups of code that we give names so that we can reuse, or call, 
+the action multiple times. They are useful for many reasions like allowing us 
+to reuse code and making our code easier to read by separating out functionality 
+in complex software.
 
-output "end of actions.quorum"
+Confusing note: Quroum is always looking for a special, unique, action called 
+Main (always with a captial M) which is where it starts reading out code. We 
+haven't seen this Main action because we haven't been using actions yet. You 
+might we wondering, "If it always looking for the Main action to start executing 
+our code, how have any of our programs been running?!?!" Fear not young 
+programmers. If Quorum doesn't find a Main method, it very sneakily wraps all 
+of our code inside of a Main method and then starts running our program.
+
+Any way, onto a trivial example. 
+*/
+action Main() 
+    say_hello()
+    say_hello()
+    say_hello()
+    // not as useful since it only contians one line
+    // actions can be way longer though
+    get_input()
+    add(1, 2)
+    integer result = complex_math(10)
+    output "complex result is: " + result
+ 
+end
+
+// this action just prints 
+action say_hello()
+    output "Hello there!"
+end
+
+// enter a number, convert it to a string, add 50 to it and print it out
+action get_input()
+    text user_input = input("enter a number")
+    integer my_int = cast(integer, user_input)
+    my_int = my_int + 504
+    output "I am a level " + my_int + " warlock"
+end
+
+// we can specify the types of variables that we pass into actions
+action add(integer a, integer b)
+    integer result = a + b
+    output "addition result: " + result
+end
+
+// actions can also return a value back to where the action was called
+action complex_math(integer a) returns integer
+    return ((a / 2) * 5) mod 3
+end
