@@ -1,7 +1,11 @@
+use Libraries.Compute.Random
+
 output "guessing-game-solution.quorum"
 
+Random r
+
 // the number the player is trying to guess
-integer correct_integer = 766
+integer correct_integer = r:RandomInteger(2000)
 
 // a boolean "flag" that we will set to true once the correct_integer has been guessed
 boolean player_has_not_won = true
@@ -18,6 +22,6 @@ repeat while player_has_not_won
         output "To low!"
     else
         output "Wow, you won!"
-        play_has_not_won = false    
+        player_has_not_won = false    
     end
 end

@@ -1,0 +1,38 @@
+
+/* This is a file for random thougths and code! This file is for learning about 
+libraries. Libraries allow us to reference and use other classes, which we 
+haven't learned about yet, and actions.
+This is great because it allows us to avoid writing useful code over and over 
+again when we need it! To be able to use libraries in your code, you have to a 
+use statment, which would look like this...
+use Libraries.Compute.Random
+Note: it's Libraries with a capital L.
+
+*/
+
+// the use statements need to be the first code lines of the program
+use Libraries.Compute.Random
+
+// declare a variable of type random
+Random r
+
+// this give a random integer from 0 to positive 2,147,483,646
+output "r:RandomInteger() = " + r:RandomInteger()
+
+// this give a random number between 0 and whatever you set max to
+integer max = 500
+output "r:RandomInteger(max) = " + r:RandomInteger(max)
+
+// this gives a random number between 
+integer min = 0
+max = 20 
+output "r:RandomIntegerBetween(min, max = " + r:RandomIntegerBetween(min, max) 
+
+output "printing out 10 random integers below 2000"
+repeat 10 times 
+    output r:RandomInteger(2000)
+end
+
+output "end of random.quorum"
+
+
