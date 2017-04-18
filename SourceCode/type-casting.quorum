@@ -1,0 +1,5 @@
+// type-casting.quorum
+output "starting type-casting.quorum"
+
+
+output "type-casting.quorum done"
