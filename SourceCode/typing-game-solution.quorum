@@ -1,0 +1,25 @@
+use Libraries.Language.Types.Text
+use Libraries.Compute.Random
+
+Random r
+Text t
+
+t:SetValue("abcdef")
+
+integer lives = 3
+integer size = t:GetSize() - 1
+
+repeat while lives > 0
+    integer index = r:RandomInteger(size)
+    text target = t:GetCharacter(index)
+    
+    say target
+    text answer = input()
+    
+    if answer not=target
+        lives = lives - 1
+        say "Wrong key!!!"
+    end
+
+end
+say "You lose, NERD!"

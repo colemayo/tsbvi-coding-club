@@ -1,30 +1,16 @@
 /*
+Make a typing game.
+Use a Text object to store a text variable that will act as the keys you are 
+being tested on. 
+The player will have a certain number of lives and the game will continue 
+while the player has more than 0 lives remaining.
 
+After you get the basics learning, keep track of how many keys the player 
+gets right before they lose and tell them at the end.
+Make the game better.
 */
 
 use Libraries.Language.Types.Text
 use Libraries.Compute.Random
 
-
-Random r
-Text t
-
-t:SetValue("abcdef")
-
-integer lives = 3
-integer size = t:GetSize() - 1
-
-repeat while lives > 0
-    integer index = r:RandomInteger(size)
-    text target = t:GetCharacter(index)
-    
-    say target
-    text answer = input()
-    
-    if answer not=target
-        lives = lives - 1
-        say "Wrong key!!!"
-    end
-
-end
-say "You lose, NERD!"
+output "delete this line"

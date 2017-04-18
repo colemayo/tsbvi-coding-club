@@ -1,0 +1,43 @@
+/*
+Game changing information here. We are going to learn about Objects today. 
+Object is a really generic term for "things" in programming languages. Objects 
+can hold values, give access to special actions, and do lots of other fancy stuff.
+Using the Random library is an example of building and using an object. 
+An object that we are going to focus on today is the Text object (notice the 
+capital T.) Text obejcts hold text values but also give you access to actions 
+that let you do things or get information about the text value it holds.
+*/
+use Libraries.Language.Types.Text
+
+Text t
+t:SetValue("Hello, world!")
+
+// GetValue() returns the text that our Text variable holds
+output t:GetValue()
+
+// What do you think Contains() does? Try and figure it out.
+output t:Contains("ello")
+
+// What about GetSize()?
+output t:GetSize()
+
+// ToLowerCase()?
+output t:ToLowerCase()
+
+// ToUpperCase()?
+output t:ToUpperCase()
+
+// Equals()?
+output t:Equals("Hello, world!")
+
+output t:GetCharacter(0)
+output t:GetCharacter(1)
+
+integer index = 0
+repeat while index < t:GetSize()
+    output t:GetCharacter(index)
+    index = index + 1
+end
+// use SetValue() to change the value
+
+
