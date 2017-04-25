@@ -1,0 +1,57 @@
+// start of arrays.quorum
+/*
+Welcome to the world of arrays! Arrays are super, super, super important in the 
+world of programming. Arrays are like storage. You have a set amount of space.
+You can put things in those spaces. Later, you can look at what you stored and 
+even change what you stored. Sounds simple, right? Take a look at the examples to 
+get an idea of the different things you can do with arrays.
+
+go to this link to see all of the actions Arrays have access to.
+https://quorumlanguage.com/Libraries/Containers/Array.html
+
+*/
+
+use Libraries.Containers.Array
+
+// you put the type that you want to store in between the carrots.
+Array<integer> myArray
+
+// I'll show you what the array looks like after each operation. 
+// Try to figure out what each action does :) 
+// myArray currently looks like this: []
+myArray:Add(0)
+// [0]
+myArray:Add(1)
+// [0, 1]
+myArray:Add(2)
+// [0, 1, 2]
+myArray:Add(5)
+// [0, 1, 2, 5]
+
+output myArray:Get(0) // outputs the value 0
+output myArray:Get(1) // outputs the value 1
+output myArray:Get(2) // outputs the value 2
+output myArray:Get(3) // outputs the value 5
+
+myArray:Set(0, 333)
+// [333, 1, 2, 5]
+myArray:Set(0, 3)
+// [3, 1, 2, 5]
+myArray:Set(1, 700)
+// [3, 700, 2, 5]
+
+output myArray:GetSize() //outputs 4
+
+output myArray:GetFromFront() // outputs 3
+output myArray:GetFromEnd() // outputs 5
+myArray:AddToFront(999)
+// [999, 3, 700, 2, 5]
+myArray:AddToEnd(0)
+// [999, 3, 700, 2, 5, 0]
+
+// this one is fancy
+myArray:Sort()
+// [0, 2, 3, 5, 700, 999]
+
+myArray:Empty()
+// []

@@ -1,0 +1,25 @@
+// start of array-challenges.quorum
+/*
+These examples will test your ability to use arrays and the actions that they 
+come with. Questions like these often come up in interviews for internships and 
+full time positions that I've applied to.
+*/
+
+use Libraries.Containers.Array
+
+Array<integer> myArray
+myArray:Add(1)
+myArray:Add(2)
+myArray:Add(5)
+myArray:Add(3)
+myArray:Add(4)
+
+// Not so challenging-challenge: Does Sort work on other types (text, number, boolean)?
+
+// Challenge 1: Find the sum of all the elements in the array.
+
+// Challenge 2: Reverese the Array
+
+// Challenge 3: Find the largest number in the array
+
+// Challenge 4: Find the lowest number in the array
