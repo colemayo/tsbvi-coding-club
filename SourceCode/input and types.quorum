@@ -1,0 +1,11 @@
+text adhy = "The number is less than one"
+text anurag_kulkarni = input("What is my number?")
+integer anurag_kulkarni_number = cast(integer,anurag_kulkarni)
+text joe_rivera = input("Is the number bigger than 100?")
+number joe_rivera_number = cast(number,joe_rivera)
+text john_huber = input("Is the number smaller than 1000?")
+number john_huber_number = cast(number,john_huber)
+text john_huber_text = cast(text,john_huber_number)
+text christopher_correll = input("what is your number?")
+integer christopher_correll_number = cast(integer,christopher_correll)
+output anurag_kulkarni+anurag_kulkarni_number +joe_rivera +joe_rivera_number+john_huber+john_huber_number+christopher_correll+christopher_correll_number 

@@ -10,3 +10,15 @@ If their guess is to high, we will output to the console "To high!"
 If their guess is to low, we will output to the console "To low!"  
 If you are confused with any of these concepts, review the files 
 input.quorum, if.quorum, repeat.quorum, and casting.quorum respectively. */
+
+text num_game ="welcome to our num game pick a num betwee 1 and 10"
+output  num_game 
+text input=input() 
+integer gess=cast(integer, input)
+integer answer = 7
+boolean win= false
+repeat until win
+	if gess  >  answer
+		output "too high, please enter new gess"
+		gess==cast(integer,input())
+end
